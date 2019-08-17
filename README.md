@@ -11,5 +11,5 @@ Proyecto de final de carrera por Pol Gómez Nogués.
 ## Uso
 Aquí se comenta como usarlo.
 
-## Actualizaciones
+## Versiones
   - 
