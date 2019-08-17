@@ -8,7 +8,14 @@ Lista de items a realizar.
     - [ ] Tratamiento de datos de session.
     - [ ] Tratamiento de datos de la aplicación.
     - [ ] Tests.
-    - [ ] CSS's.
+    - [x] CSS's.
+      - Spectre.css
+      - Bulma
+      - Materialize
+      - Bootstrap
+      - Tent css
+      - Pure.css
+      - WebSlides
     - [ ] Para hacer un chat (?)
   
   - [ ] Buscar información de nube
