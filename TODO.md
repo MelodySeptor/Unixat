@@ -3,6 +3,8 @@ Lista de items a realizar.
 
 ## Recolectar información
   - [ ] Buscar información sobre diferentes API's
+    - [ ] Servidor.
+      - Express.
     - [ ] Login/Registro.
     - [ ] Comunicación con una base de datos.
     - [ ] Tratamiento de datos de session.
