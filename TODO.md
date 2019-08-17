@@ -1,7 +1,7 @@
 # TODO
 Lista de items a realizar.
 
-## Recolectar infomración
+## Recolectar información
   - [ ] Buscar información sobre diferentes API's
     - [ ] Login/Registro.
     - [ ] Comunicación con una base de datos.
@@ -19,9 +19,11 @@ Lista de items a realizar.
     - [ ] Para hacer un chat (?)
       - Meteor.js
   
-  - [ ] Buscar información de nube
-    - [ ] Proveedor de dominio.
-    - [ ] Proveedor de servicio en la nube.
+  - [x] Buscar información de nube
+    - [x] Proveedor de dominio.
+      - GoDaddy (unixat.com 0'99€).
+    - [x] Proveedor de servicio en la nube.
+      - DigitalOcean (6€/mes)
     
   - [ ] Buscar información sobre configuración de la nube.
     - [ ] Ver en proyecto Servme la configuración con Ngix.
