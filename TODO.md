@@ -6,6 +6,7 @@ Lista de items a realizar.
     - [ ] Servidor.
       - Express.
     - [ ] Login/Registro.
+      - Passport.js.
     - [ ] Comunicación con una base de datos.
     - [ ] Tratamiento de datos de session.
     - [ ] Tratamiento de datos de la aplicación.
