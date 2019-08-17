@@ -17,6 +17,7 @@ Lista de items a realizar.
       - Pure.css
       - WebSlides
     - [ ] Para hacer un chat (?)
+      - Meteor.js
   
   - [ ] Buscar información de nube
     - [ ] Proveedor de dominio.
