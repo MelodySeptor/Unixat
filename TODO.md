@@ -27,6 +27,12 @@ Lista de items a realizar.
       - GoDaddy (unixat.com 0'99€).
     - [x] Proveedor de servicio en la nube.
       - DigitalOcean (6€/mes)
+      
+  - [x] Buscar BD
+    - Redis (posiblemente este)
+    - MySQL
+    - MongoDB
+    - PostgrSQL
     
   - [ ] Buscar información sobre configuración de la nube.
     - [ ] Ver en proyecto Servme la configuración con Ngix.
