@@ -64,6 +64,13 @@ Lista de items a realizar.
 
 ## Desarrollo
 
+### Módulos
+  - [ ] Index
+    Módulo que contiene todas las rutas a las que se puede acceder. Así como el middleware necessario para el funcionamiento.
+  - [ ] Registro/Login
+    Módulo que contiene la gestión del registro de un usuario y el inicio de sesión. Aquí va a utilitzarse las APIs necesarias para gestionar los usuarios de la Base de Datos.
+  - [ ] ...
+
 ## Test
 
 ## Pruebas con usuarios pilotos
