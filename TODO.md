@@ -3,14 +3,21 @@ Lista de items a realizar.
 
 ## Recolectar información
   - [ ] Buscar información sobre diferentes API's
-    - [ ] Servidor.
+    - [x] Servidor.
       - Express.
-    - [ ] Login/Registro.
+    - [x] Login/Registro.
       - Passport.js.
+      - Bcrypt.
+      - Crypto.
+      - Cryptr.
     - [ ] Comunicación con una base de datos.
+      - Primero se debe seleccionar el tipo de BD.
     - [ ] Tratamiento de datos de session.
-    - [ ] Tratamiento de datos de la aplicación.
-    - [ ] Tests.
+    - [x] Tratamiento de datos de la aplicación.
+      - Manual.
+    - [x] Tests.
+      - Mocha.
+      - Manual.
     - [x] CSS's.
       - Spectre.css
       - Bulma
@@ -19,7 +26,7 @@ Lista de items a realizar.
       - Tent css
       - Pure.css
       - WebSlides
-    - [ ] Para hacer un chat (?)
+    - [x] Para hacer un chat (?)
       - Meteor.js
   
   - [x] Buscar información de nube
@@ -34,9 +41,9 @@ Lista de items a realizar.
     - MongoDB
     - PostgrSQL
     
-  - [ ] Buscar información sobre configuración de la nube.
-    - [ ] Ver en proyecto Servme la configuración con Ngix.
-    - [ ] HTTPS.
+  - [x] Buscar información sobre configuración de la nube.
+    - [x] Ver en proyecto Servme la configuración con Ngix.
+    - [x] HTTPS.
     
 ## Selección
   - [ ] Selección de API's.
