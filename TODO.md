@@ -47,7 +47,9 @@ Lista de items a realizar.
     
 ## Selección
   - [ ] Selección de API's.
-  - [ ] Selección de proveedor de nube (así como dominio).
+  - [x] Selección de proveedor de nube (así como dominio).
+    - GoDaddy.
+    - DigitalOcean.
   - [ ] Selección de configuración en la nube.
 
 ## Diseño
