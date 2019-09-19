@@ -1,5 +1,14 @@
-# [TODO](https://github.com/MelodySeptor/Unixat/blob/master/TODO.md#recolectar-información)
+# TODO
 Lista de items a realizar.
+
+## Tabla de contenidos
+- [Recolectar información] (#recolectar-información)
+- [Selección] (#selección)
+- [Diseño] (#diseño)
+- [Desarrollo] (#desarrollo)
+- [Módulos] (#módulos)
+- [Test] (#test)
+- [Pruebas con usuarios pilotos] (#pruebas-con-usuarios-pilotos)
 
 ## Recolectar información
   - [ ] Buscar información sobre diferentes API's
