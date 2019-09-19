@@ -20,7 +20,7 @@ Lista de items a realizar.
       - Crypto.
       - Cryptr.
     - [ ] Comunicación con una base de datos.
-      - Primero se debe seleccionar el tipo de BD.
+      - Redis.
     - [ ] Tratamiento de datos de session.
     - [x] Tratamiento de datos de la aplicación.
       - Manual.
@@ -58,7 +58,7 @@ Lista de items a realizar.
   - [ ] Selección de API's.
     - [x] Servidor -> Express.
     - [ ] Login/Registro -> .
-    - [ ] Comunicación con una base de datos -> .
+    - [x] Comunicación con una base de datos -> Redis.
     - [ ] Tratamiento de datos de session -> .
     - [x] Tratamiento de datos de la aplicación -> Manual.
     - [x] Test -> Manual y Mocha.
