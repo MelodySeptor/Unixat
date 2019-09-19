@@ -56,6 +56,14 @@ Lista de items a realizar.
     
 ## Selección
   - [ ] Selección de API's.
+    - [x] Servidor -> Express.
+    - [ ] Login/Registro -> .
+    - [ ] Comunicación con una base de datos -> .
+    - [ ] Tratamiento de datos de session -> .
+    - [x] Tratamiento de datos de la aplicación -> Manual.
+    - [x] Test -> Manual y Mocha.
+    - [x] CSS -> Materialize, WebSlides y Bootstrap.
+    - [x] Base de datos -> Redis.
   - [x] Selección de proveedor de nube (así como dominio).
     - GoDaddy.
     - DigitalOcean.
