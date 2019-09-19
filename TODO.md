@@ -2,13 +2,13 @@
 Lista de items a realizar.
 
 ## Tabla de contenidos
-- [Recolectar información] (https://github.com/MelodySeptor/Unixat/blob/master/TODO.md#recolectar-información)
-- [Selección] (https://github.com/MelodySeptor/Unixat/blob/master/TODO.md#selección)
-- [Diseño] (https://github.com/MelodySeptor/Unixat/blob/master/TODO.md#diseño)
-- [Desarrollo] (https://github.com/MelodySeptor/Unixat/blob/master/TODO.md#desarrollo)
-- [Módulos] (https://github.com/MelodySeptor/Unixat/blob/master/TODO.md#módulos)
-- [Test] (https://github.com/MelodySeptor/Unixat/blob/master/TODO.md#test)
-- [Pruebas con usuarios pilotos] (https://github.com/MelodySeptor/Unixat/blob/master/TODO.md#pruebas-con-usuarios-pilotos)
+- [Recolectar información](https://github.com/MelodySeptor/Unixat/blob/master/TODO.md#recolectar-información)
+- [Selección](https://github.com/MelodySeptor/Unixat/blob/master/TODO.md#selección)
+- [Diseño](https://github.com/MelodySeptor/Unixat/blob/master/TODO.md#diseño)
+- [Desarrollo](https://github.com/MelodySeptor/Unixat/blob/master/TODO.md#desarrollo)
+- [Módulos](https://github.com/MelodySeptor/Unixat/blob/master/TODO.md#módulos)
+- [Test](https://github.com/MelodySeptor/Unixat/blob/master/TODO.md#test)
+- [Pruebas con usuarios pilotos](https://github.com/MelodySeptor/Unixat/blob/master/TODO.md#pruebas-con-usuarios-pilotos)
 
 ## Recolectar información
   - [ ] Buscar información sobre diferentes API's
