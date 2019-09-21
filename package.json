@@ -1,0 +1,19 @@
+{
+  "name": "unixat",
+  "version": "1.0.0",
+  "description": "Proyecto de final de grado por Pol Gómez.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MelodySeptor/Unixat.git"
+  },
+  "author": "Pol",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MelodySeptor/Unixat/issues"
+  },
+  "homepage": "https://github.com/MelodySeptor/Unixat#readme"
+}
