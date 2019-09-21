@@ -80,6 +80,8 @@ Lista de items a realizar.
     - [ ] Hacer introducción (explicando el porque se hace y bla bla bla).
     - [ ] Hacer estado del arte (explicar porque se han elejido esas tecnologias).
     - [ ] Hacer planificación (estimada, puede variar).
+    
+  - [ ] Planifiación
 
 ## Diseño
   - [ ] Diseño interfaz
