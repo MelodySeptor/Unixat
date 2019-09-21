@@ -11,7 +11,7 @@ Lista de items a realizar.
 - [Pruebas con usuarios pilotos](https://github.com/MelodySeptor/Unixat/blob/master/TODO.md#pruebas-con-usuarios-pilotos)
 
 ## Recolectar información
-  - [ ] Buscar información sobre diferentes API's
+  - [x] Buscar información sobre diferentes API's
     - [x] Servidor.
       - Express.
     - [x] Login/Registro.
@@ -19,9 +19,10 @@ Lista de items a realizar.
       - Bcrypt.
       - Crypto.
       - Cryptr.
-    - [ ] Comunicación con una base de datos.
+    - [x] Comunicación con una base de datos.
       - Redis.
-    - [ ] Tratamiento de datos de session.
+    - [x] Tratamiento de datos de session.
+      - Express-session.
     - [x] Tratamiento de datos de la aplicación.
       - Manual.
     - [x] Tests.
@@ -59,7 +60,7 @@ Lista de items a realizar.
     - [x] Servidor -> Express.
     - [ ] Login/Registro -> .
     - [x] Comunicación con una base de datos -> Redis.
-    - [ ] Tratamiento de datos de session -> .
+    - [x] Tratamiento de datos de session -> Express-session.
     - [x] Tratamiento de datos de la aplicación -> Manual.
     - [x] Test -> Manual y Mocha.
     - [x] CSS -> Materialize, WebSlides y Bootstrap.
@@ -67,7 +68,6 @@ Lista de items a realizar.
   - [x] Selección de proveedor de nube (así como dominio).
     - GoDaddy.
     - DigitalOcean.
-  - [ ] Selección de configuración en la nube.
 
 ## Diseño
   - [ ] Diseño interfaz
