@@ -1,5 +1,5 @@
 # Unixat
-Proyecto de final de carrera por Pol Gómez Nogués.
+Proyecto de final de grado por Pol Gómez.
 
 ## API's
   - Lista
