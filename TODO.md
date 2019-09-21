@@ -4,6 +4,7 @@ Lista de items a realizar.
 ## Tabla de contenidos
 - [Recolectar información](https://github.com/MelodySeptor/Unixat/blob/master/TODO.md#recolectar-información)
 - [Selección](https://github.com/MelodySeptor/Unixat/blob/master/TODO.md#selección)
+- [Primera entrega](https://github.com/MelodySeptor/Unixat/blob/master/TODO.md#primera-entrega)
 - [Diseño](https://github.com/MelodySeptor/Unixat/blob/master/TODO.md#diseño)
 - [Desarrollo](https://github.com/MelodySeptor/Unixat/blob/master/TODO.md#desarrollo)
 - [Módulos](https://github.com/MelodySeptor/Unixat/blob/master/TODO.md#módulos)
@@ -68,6 +69,17 @@ Lista de items a realizar.
   - [x] Selección de proveedor de nube (así como dominio).
     - GoDaddy.
     - DigitalOcean.
+
+## Primera entrega
+  - [x] Creación de material
+    - [x] Crear documento en Overleaf.
+    - [x] Crear repositorio GitHub.
+    - [x] Crear calendario Google Calendar. 
+    
+  - [ ] Documento
+    - [ ] Hacer introducción (explicando el porque se hace y bla bla bla).
+    - [ ] Hacer estado del arte (explicar porque se han elejido esas tecnologias).
+    - [ ] Hacer planificación (estimada, puede variar).
 
 ## Diseño
   - [ ] Diseño interfaz
