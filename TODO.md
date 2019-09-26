@@ -57,9 +57,9 @@ Lista de items a realizar.
     - [x] HTTPS.
     
 ## Selección
-  - [ ] Selección de API's.
+  - [x] Selección de API's.
     - [x] Servidor -> Express.
-    - [ ] Login/Registro -> .
+    - [x] Login/Registro -> Crypto.
     - [x] Comunicación con una base de datos -> Redis.
     - [x] Tratamiento de datos de session -> Express-session.
     - [x] Tratamiento de datos de la aplicación -> Manual.
@@ -67,7 +67,7 @@ Lista de items a realizar.
     - [x] CSS -> Materialize, WebSlides y Bootstrap.
     - [x] Base de datos -> Redis.
   - [x] Selección de proveedor de nube (así como dominio).
-    - GoDaddy.
+    - 1And1.
     - DigitalOcean.
 
 ## Primera entrega
@@ -76,12 +76,12 @@ Lista de items a realizar.
     - [x] Crear repositorio GitHub.
     - [x] Crear calendario Google Calendar. 
     
-  - [ ] Documento
-    - [ ] Hacer introducción (explicando el porque se hace y bla bla bla).
-    - [ ] Hacer estado del arte (explicar porque se han elejido esas tecnologias).
-    - [ ] Hacer planificación (estimada, puede variar).
+  - [x] Documento
+    - [x] Hacer introducción (explicando el porque se hace y bla bla bla).
+    - [x] Hacer estado del arte (explicar porque se han elejido esas tecnologias).
+    - [x] Hacer planificación (estimada, puede variar).
     
-  - [ ] Planifiación
+  - [x] Planifiación
 
 ## Diseño
   - [ ] Diseño interfaz
