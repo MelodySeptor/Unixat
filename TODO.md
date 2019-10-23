@@ -84,10 +84,10 @@ Lista de items a realizar.
   - [x] Planifiación
 
 ## Diseño
-  - [ ] Diseño interfaz
-    - [ ] Seleccionar CSS
-    - [ ] Realizar diseño de página principal y chat.
-    - [ ] Repetir hasta encontrar uno que sea chulo.
+  - [x] Diseño interfaz
+    - [x] Seleccionar CSS
+    - [x] Realizar diseño de página principal y chat.
+    - [x] Repetir hasta encontrar uno que sea chulo.
   
   - [ ] Diseño interno
     - [ ] Diseñar la página inicial.
