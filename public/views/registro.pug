@@ -1,0 +1,58 @@
+html
+    include ./head.pug
+    include ./header.pug
+
+    body
+        div(id="index-banner" class="parallax-container valign-wrapper")
+            div(class="section no-pad-bot")
+                div(class="container")
+                    h1(class="header center white-text text-white-2") Unichat
+                    div(class="row center")
+                        h5(class="header col s12 light") Frase molona
+            div(class="parallax")
+                img(src="images/Banner11.png" alt="Unsplashed background img 1")
+
+        h3(class="header center green-text") Registrarse
+
+        div(class="container")
+            div(clas="section")
+                div(class="row")
+                    form(class="col s12" method="post" action="/peticionRegistro")
+                        div(class="row")
+                            div(class="input-field col s6")
+                                i(class="material-icons prefix green-text") account_circle
+                                input(id="nombreRegistro" name="nombreRegistro" type="text" class="validate" required="required")
+                                label(for="nombreRegistro") Nombre
+
+                        div(class="row")
+                            div(class="input-field col s12")
+                                i(class="material-icons prefix green-text") email
+                                input(id="emailRegistro" name="emailRegistro" type="email" class="validate" required="required")
+                                label(for="emailRegistro") Email
+
+                        div(class="row")
+                            div(class="input-field col s6")
+                                i(class="material-icons prefix green-text") lock
+                                input(id="passwordRegistro" type="password" class="validate" required="required")
+                                label(for="passwordRegistro") Contraseña
+
+                            div(class="input-field col s6")
+                                input(id="passwordRepetirRegistro" type="password" class="validate" required="required")
+                                label(for="passwordRepetirRegistro") Repite la contraseña
+                        div(class="row")
+                            div(class="input-field col s12")
+                                label
+                                    input(class="with-gap green-text" name="group1" type="radio" required="required") 
+                                    span Acepto los términos, condiciones y el uso de cookies.
+
+                        div(class="row")
+                            div(class="input-field col s6")
+                                i(class="material-icons prefix green-text") error_outline
+                                label
+                                    a(href="/acceder") Ya estoy registrado
+                            div(class="input-field col s6")
+                                button(class="waves-effect waves-light btn green accent-4" type="submit" name="action") Registrar
+                                    i(class="material-icons right") chevron_right
+
+    include ./footer.pug
+    include ./scriptsCss.pug

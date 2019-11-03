@@ -12,11 +12,11 @@ app.get('/', function(req, res){
  })
 
  app.get('/identificarse', function(req, res){
-     res.send("Indentificarse");
+     res.render('identificarse');
  })
 
  app.get('/registro', function(req, res){
-     res.send('Registro');
+     res.render('registro');
  })
 
  app.get('/chat', function (req, res){

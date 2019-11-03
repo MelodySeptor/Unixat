@@ -1,15 +1,52 @@
 html
-    head
-        link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
-        link(type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection")
-        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    include ./head.pug
+    include ./header.pug  
     
-    header
-        include ./header.pug
+    body  
+        div(id="index-banner" class="parallax-container valign-wrapper")
+            div(class="section no-pad-bot")
+                div(class="container")
+                    h1(class="header center white-text text-white-2") Unichat
+                    div(class="row center")
+                        h5(class="header col s12 light") Frase molona
+            div(class="parallax")
+                img(src="images/Banner11.png" alt="Unsplashed background img 1")
+        
+        div(class="container")
+            div(class="section")
+                div(class="row")
+                    div(class="col s12 m4")
+                        div(class="icon-block")
+                            h2(class="center green-text")
+                                i(class="material-icons") flash_on
+                            h5(class="center") Rapidez
+                            p(class="light") Texto molón explicando que es muy rapido porque patatin y patatan.
+               
+                    div(class="col s12 m4")
+                        div(class="icon-block")
+                            h2(class="center green-text")
+                                i(class="material-icons") group
+                            h5(class="center") Comodidad
+                            p(class="light") Texto molón explicando que es muy comodo de usar.
 
-    body    
-        p Hello World!
+                    div(class="col s12 m4")
+                        div(class="icon-block")
+                            h2(class="center green-text")
+                                i(class="material-icons") lock
+                            h5(class="center") Seguridad
+                            p(class="light") Texto molón explicando que es muy seguro porque nuestros expertos trabajan muy duramente en ello.
+        
+        div(class="container")
+            div(class="section")
+                div(class="row")
+                    div(class="col s12 m3")
+                        a(style="visibility:hidden;") Hey!
+                    div(class="col s12 m4")
+                        a(class="waves-effect waves-light btn green accent-4" href="/identificarse") Inicar Sesión
+                    div(class="col s12 m4")
+                        a(class="waves-effect waves-light btn green accent-4" href="/registro") Registro
 
-        script(type="text/javascript" src="js/materialize.js")
-        script(type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js")
-        script(type="text/javascript" src="js/init.js")
+
+    include ./footer.pug
+
+    include ./scriptsCss.pug
