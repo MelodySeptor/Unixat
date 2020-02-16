@@ -1,0 +1,32 @@
+html
+    include ./head.pug
+    include ./header.pug
+
+    body
+        include ./banner.pug
+
+        h3(class="header center green-text") Comencemos
+        br
+        br
+        
+        div(class="container")
+            div(clas="section")
+                div(class="row")
+                    div(class="col s6")
+                        p Bienvenido, porfavor, selecciona los estudios que vas a cursas de la siguiente lista.
+                div(class="row")
+                    form(class="col s12" method="post" action="/seleccionAsignaturaFinal")
+                        for val in cursos
+                            div(class="row")
+                                div(class="input-field col s6")
+                                    label
+                                        input(class="with-gap green-text" name="group1" type="radio" value= val)
+                                        span= val
+                        br
+                        div(class="row")
+                            div(class="input-field col s6")
+                                    button(class="waves-effect waves-light btn green accent-4" type="submit" name="action") Siguiente
+                                        i(class="material-icons right") chevron_right
+
+    include ./footer.pug
+    include ./scriptsCss.pug

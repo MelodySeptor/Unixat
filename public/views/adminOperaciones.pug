@@ -1,0 +1,89 @@
+html
+    include ./head.pug
+    include ./header.pug
+
+    body
+        include ./banner.pug
+
+        h3(class="header center green-text") Gestión de Asignatura
+        br
+        br
+        div(class="container")
+            div(clas="section")
+                div(class="row")
+
+                if(userMod==1)
+                     div(class="row")
+                        form(class="col s12" method="post" action="/gestionaUsuarioAdmin")
+                            table
+                                thead
+                                    tr
+                                        th= "Asignatura"
+                                        th
+                                tbody
+                                    - var n=0
+                                    while n < asignUser.length
+                                        tr
+                                            td= asignUser[n].NombreC
+                                            td
+                                                div()
+                                                    div()
+                                                        label
+                                                            input(class="with-gap green-text" name='group1' value=asignUser[n].NombreC+"?delF" type="radio")
+                                                            span Eliminar
+                                        - n=n+1
+                            div(class="row")
+                                div(class="input-field col s6")
+                                        button(class="waves-effect waves-light btn green accent-4" type="submit" name="action") Siguiente
+                                            i(class="material-icons right") chevron_right
+
+                if(userMod==2)
+                    div(class="row")
+                        if asignUserAdminControl == false
+                            div(class="input-field col s6")
+                                i(class="material-icons prefix red-text") error_outline
+                                label
+                                    p(class="red-text") Error.
+                        else
+                            form(class="col s12" method="post" action="/gestionaUsuarioAdmin")
+                                table
+                                    thead
+                                        tr
+                                            th= "Asignatura"
+                                            th
+                                    tbody
+
+                                        for n in asignUserAdmin
+                                            tr
+                                                td= n
+                                                td
+                                                    div(class="row")
+                                                        div
+                                                            label
+                                                                input(class="with-gap green-text" name='group1' value= n+"?addF" type="radio")
+                                                                span Añadir
+                                div(class="row")
+                                    div(class="input-field col s6")
+                                            button(class="waves-effect waves-light btn green accent-4" type="submit" name="action") Procesar
+                                                i(class="material-icons right") chevron_right
+                if(userMod==3)
+                    div(class="container")
+                        div(clas="section")
+                            div(class="row")
+                                form(class="col s12" method="post" action="/peticionNuevaSala")
+                                    div(class="row")
+                                        div(class="input-field col s6")
+                                            i(class="material-icons prefix green-text") chat
+                                            input(id="nameAsign" name="nameAsign" type="text" class="validate" required="required")
+                                            label(for="nameAsign") Nombre (debe ser único)
+                                    div(class="row")
+                                        div(class="input-field col s6")
+                                            i(class="material-icons prefix green-text") description
+                                            input(id="gradeAsign" name="gradeAsign" type="text" class="validate" required="required")
+                                            label(for="gradeAsign") Grado
+
+                                        div(class="input-field col s6")
+                                            button(class="waves-effect waves-light btn green accent-4" type="submit" name="action") Añadir
+                                                i(class="material-icons right") chevron_right
+    include ./footer.pug
+    include ./scriptsCss.pug

@@ -1,8 +1,8 @@
 header
         nav(class="green accent-4" role="navigaton")
             div(class="nav-wrapper container")
-                a(id="logo_container" class="brand-logo" href="/") Logo
-                    //img(class="responsive-img" src="images/logo.png")
+                a(id="logo_container" class="brand-logo" href="/")
+                    img(class="responsive-img" src="images/logo.png" width="30%")
                 ul(class="right hide-on-med-and-down")
                     li
                         a(class="white-text" href="/")
@@ -13,34 +13,74 @@ header
                     li
                         a(class="white-text" href="soporte") 
                             b SOPORTE
+
+                    if (rol==2 || rol ==3)
+                        li
+                            a(class="waves-effect waves-light btn green darken-1" href="administr")
+                                b Administrar
+                    if logged
+                        li
+                            a(class="waves-effect waves-light btn orange accent-4" href="chat")
+                                b Chat
+                        //li
+                            a(class="waves-effect waves-light btn green accent-4" href="perfil")
+                                b=userName 
+                        //li
+                            a(class="waves-effect waves-light btn orange accent-4" href="cerrar")
+                                b Cerrar sesion
+                        li
+                            a(class="dropdown-trigger white-text" href="#!" data-target="dropdown1")
+                                i(class="material-icons right") arrow_drop_down
+                                b Cuenta
+                    else    
+                        li
+                            a(class="waves-effect waves-light btn green accent-4" href="identificarse") 
+                                b Iniciar Sesión
+                        li
+                            a(class="waves-effect waves-light btn green accent-4" href="registro") 
+                                b Registrarse
+
+                ul(id="dropdown1" class="dropdown-content")
                     li
-                        a(class="white-text" href="faq") 
-                            b FAQ
+                        a(href="perfil" class="green-text")
+                            b Perfil 
                     li
-                        a(class="waves-effect waves-light btn green accent-4" href="identificarse") 
-                            b Iniciar Sesión
-                    li
-                        a(class="waves-effect waves-light btn green accent-4" href="registro") 
-                            b Registrarse
-                
+                        a(href="cerrar" class="green-text")
+                            b Cerrar sesion
+
+
+
                 ul(id="nav-mobile" class="sidenav")
                     li
-                        a(href="/")
+                        a(class="white-text" href="/")
                             b INICIO
                     li
-                        a(href="acercade") 
+                        a(class="white-text" href="acercade") 
                             b ACERCA DE
                     li
-                        a(href="soporte") 
+                        a(class="white-text" href="soporte") 
                             b SOPORTE
-                    li
-                        a(href="faq") 
-                            b FAQ
-                    li
-                        a(class="waves-effect waves-light btn green accent-4" href="identificarse") 
-                            b Iniciar Sesión
-                    li
-                        a(class="waves-effect waves-light btn green accent-4" href="registro") 
-                            b Registrarse
+
+                    if (rol==2 || rol ==3)
+                        li
+                            a(class="waves-effect waves-light btn green darken-1" href="administr")
+                                b Administrar
+                    if logged
+                        li
+                            a(class="waves-effect waves-light btn teal accent-4" href="chat")
+                                b Chat
+                        li
+                            a(class="waves-effect waves-light btn green accent-4" href="perfil")
+                                b=userName 
+                        li
+                            a(class="waves-effect waves-light btn orange accent-4" href="cerrar")
+                                b Cerrar sesion
+                    else    
+                        li
+                            a(class="waves-effect waves-light btn green accent-4" href="identificarse") 
+                                b Iniciar Sesión
+                        li
+                            a(class="waves-effect waves-light btn green accent-4" href="registro") 
+                                b Registrarse
                 a(href="#" data-target="nav-mobile" class="sidenav-trigger")
                     i(class="material-icons white-text") menu

@@ -3,14 +3,7 @@ html
     include ./header.pug  
     
     body  
-        div(id="index-banner" class="parallax-container valign-wrapper")
-            div(class="section no-pad-bot")
-                div(class="container")
-                    h1(class="header center white-text text-white-2") Unichat
-                    div(class="row center")
-                        h5(class="header col s12 light") Frase molona
-            div(class="parallax")
-                img(src="images/Banner11.png" alt="Unsplashed background img 1")
+        include ./banner.pug
         
         div(class="container")
             div(class="section")
@@ -20,27 +13,27 @@ html
                             h2(class="center green-text")
                                 i(class="material-icons") flash_on
                             h5(class="center") Rapidez
-                            p(class="light") Texto molón explicando que es muy rapido porque patatin y patatan.
+                            p(class="light") El diseño de esta aplicación web te permite navegar a través de ella sin que tengas que preocuparte del tiempo de espera. Ya que nuestros expertos han cuidado hasta el más último detalle para que la experiencia de úso sea rápida y eficaz.
                
                     div(class="col s12 m4")
                         div(class="icon-block")
                             h2(class="center green-text")
                                 i(class="material-icons") group
                             h5(class="center") Comodidad
-                            p(class="light") Texto molón explicando que es muy comodo de usar.
+                            p(class="light") Gracias a la sencillez del portal web, nunca vas a perderte. Encontrarás todo lo que necesites de forma simple, ya sea chatear, enviar un mensaje al soporte técnico, saber más acerca de la aplicación, o bien, poder administrar a los usuarios del centro.
 
                     div(class="col s12 m4")
                         div(class="icon-block")
                             h2(class="center green-text")
                                 i(class="material-icons") lock
                             h5(class="center") Seguridad
-                            p(class="light") Texto molón explicando que es muy seguro porque nuestros expertos trabajan muy duramente en ello.
+                            p(class="light") A partir de varias técnicas de seguridad y el uso de varias herramientas, te brindamos una experiencia segura para que puedas comunicarte con los integrantes de tu centro con total confianza.
         
         div(class="container")
             div(class="section")
                 div(class="row")
                     div(class="col s12 m3")
-                        a(style="visibility:hidden;") Hey!
+                        a(style="visibility:hidden;") Estoy oculto, si me ves, reportalo al soporte, porfavor
                     div(class="col s12 m4")
                         a(class="waves-effect waves-light btn green accent-4" href="/identificarse") Inicar Sesión
                     div(class="col s12 m4")

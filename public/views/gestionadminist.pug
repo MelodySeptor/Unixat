@@ -1,0 +1,109 @@
+html
+    include ./head.pug
+    include ./header.pug
+
+    body
+        include ./banner.pug
+
+        if(estado=='asign')
+            h3(class="header center green-text") Gestión de Salas
+        else
+            h3(class="header center green-text") Gestión de Usuarios
+        br
+        br
+        
+        div(class="container")
+            div(clas="section")
+                div(class="row")
+
+                if(estado=='users')
+                     div(class="row")
+                        form(class="col s12" method="post" action="/gestionaUsuarioAdmin")
+                            table(class="responsive-table")
+                                thead
+                                    tr
+                                        th Nombre
+                                        th Email
+                                        th Rol
+                                tbody
+                                    - var n=0
+                                    while n < users.length
+                                        tr
+                                            td= users[n].Nombre
+                                            td= users[n].Email
+                                            if users[n].ID_Rol == 1
+                                                td= "Alumno"
+                                            if users[n].ID_Rol == 2
+                                                td= "Profesor"
+                                            if users[n].ID_Rol == 3
+                                                td= "Administrador"
+                                        
+                                            //div(class="row")
+                                        tr
+                                            td
+                                                div
+                                                    label
+                                                        input(class="with-gap green-text" name='group1' value= users[n].Email+"?delUser" type="radio")
+                                                        span Eliminar todo
+                                                
+                                            td
+                                                div
+                                                    label
+                                                        input(class="with-gap green-text" name='group1' value= users[n].Email+"?delUserAsign" type="radio")
+                                                        span Eliminar Asignatura
+                                            td
+                                        tr
+                                            td
+                                                div
+                                                    label
+                                                        input(class="with-gap black-text" name='group1' value= users[n].Email+"?addUser" type="radio")
+                                                        span Añade asignatura
+                                            td
+                                                div
+                                                    label
+                                                        input(class="with-gap green-text" name='group1' value= users[n].Email+"?rolUser" type="radio")
+                                                        span Promover a rol superior
+                                            td
+                                        - n=n+1
+                            div(class="row")
+                                div(class="input-field col s6")
+                                        button(class="waves-effect waves-light btn green accent-4" type="submit" name="action") Siguiente
+                                            i(class="material-icons right") chevron_right
+
+                if(estado=='asign')
+                    div(class="row")
+                            form(class="col s12" method="post" action="/gestionaAsignAdmin")
+                                table
+                                    thead
+                                        tr
+                                            th= "Asignaturas"
+                                            th= "Carrera"
+                                            th
+                                    tbody
+                                        tr
+                                            td
+                                                div(class="row")
+                                                        div(class="input-field col s6")
+                                                            label
+                                                                input(class="with-gap green-text" name='group1' value="?addSala" type="radio")
+                                                                span Anadir nueva sala
+                                            td
+                                            td
+                                        - var n=0
+                                        while n < salas.length
+                                            tr
+                                                td= salas[n].NombreC
+                                                td= salas[n].Carrera
+                                                td
+                                                    div(class="row")
+                                                        div(class="input-field col s6")
+                                                            label
+                                                                input(class="with-gap green-text" name='group1' value= salas[n].NombreC+"?delSala" type="radio")
+                                                                span Eliminar
+                                            - n=n+1
+                                div(class="row")
+                                    div(class="input-field col s6")
+                                            button(class="waves-effect waves-light btn green accent-4" type="submit" name="action") Siguiente
+                                                i(class="material-icons right") chevron_right
+    include ./footer.pug
+    include ./scriptsCss.pug

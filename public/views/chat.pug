@@ -1,0 +1,34 @@
+html
+    include ./head.pug
+    include ./header.pug
+
+    body
+        include ./banner
+        h3(class="header center green-text") Unichat
+        br
+        div(class="container")
+          div(clas="section")
+            div(class="row")
+              h4(id="salaActual" class="center")
+              input(type='hidden', class='input', id='name' value=userName)
+              table(class="highlight")
+                tbody
+                  tr
+                    td
+                      ul(id="chat-messages" style="overflow-y: auto;height: 300px;")
+                    td
+                        h5(class="center")= "Salas"
+                        ul(id="rooms" class="center collection")
+                  tr  
+                    td
+                      div(class="input-field col s12")
+                        input(type='text', class='input', placeholder='Escribe algo...', id='data')
+                    td
+                      form(class="col s12" method="post" action="#")
+                        button(type="button" id="datasend" value="send" class="waves-effect waves-light btn green accent-4") Enviar
+                          i(class="material-icons right") chevron_right
+                      
+
+    include ./footer.pug
+    script(type="text/javascript" src="js/chatView.js")
+    include ./scriptsCss.pug

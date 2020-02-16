@@ -1,0 +1,29 @@
+html
+    include ./head.pug
+    include ./header.pug
+
+    body
+        include ./banner.pug
+
+        h3(class="header center green-text") He olvidado la contraseña
+        br
+        br
+                        
+        div(class="container")
+            div(clas="section")
+                div(class="row")
+                    form(class="col s12" method="post" action="/peticionRecupPass")
+                        if errorRec
+                            p Error usuario no existe!!
+                        div(class="row")
+                            div(class="input-field col s6")
+                                i(class="material-icons prefix green-text") account_circle
+                                input(id="usernameRec" name="usernameRec" type="text" class="validate" required="required")
+                                label(for="usernameRec") Usuario (Email)
+                        
+                                button(class="waves-effect waves-light btn green accent-4" type="submit" name="action") Recuperar
+                                    i(class="material-icons right") chevron_right
+
+                
+    include ./footer.pug
+    include ./scriptsCss.pug

@@ -1,0 +1,35 @@
+html
+    include ./head.pug
+    include ./header.pug  
+    
+    body  
+        include ./banner.pug
+        
+        h3(class="header center green-text") Soporte
+        br
+        br
+
+        div(class="container")
+            div(clas="section")
+                div(class="row")
+                    form(class="col s12" method="post" action="/peticionSoporte")
+                        div(class="row")
+                            div(class="input-field col s6")
+                                i(class="material-icons prefix green-text") account_circle
+                                input(id="emailContacto" name="emailContacto" type="text" class="validate" required="required")
+                                label(for="emailContacto") Email de contacto
+
+                        div(class="row")
+                            div(class="input-field col s12")
+                                i(class="material-icons prefix green-text") assignment
+                                textarea(id="problemaSoporte" name="problemaSoporte" type="text" class="materialize-textarea validate" required="required")
+                                label(for="problemaSoporte") Escribe aquí tu problema
+
+                        div(class="row")
+                            div(class="input-field col s6")
+                                button(class="waves-effect waves-light btn green accent-4" type="submit" name="action") Enviar
+                                    i(class="material-icons right") chevron_right
+
+    include ./footer.pug
+
+    include ./scriptsCss.pug

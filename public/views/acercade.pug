@@ -1,0 +1,19 @@
+html
+    include ./head.pug
+    include ./header.pug  
+    
+    body  
+        include ./banner.pug
+        h3(class="header center green-text") Acerca de
+        br
+        br
+        div(class="container")
+            div(class="section")
+                div(class="row")
+                    p Durante los últimos años las aplicaciones de comunicación entre usuarios han incrementado su popularidad hasta el punto que, a día de hoy, es imprescindible disponer de algún programa para ello. España es un ejemplo, dado que el 94,6\% de ciudadanos usa este tipo de tecnologías. Esta necesidad de comunicación, se hace más notoria en las universidades, donde los alumnos y profesores se ponen en contacto a través de un foro o correo electrónico con todos los inconvenientes que plantea. Por otro lado, la facilidad de poder usar aplicaciones web sin una instalación previa se ha convertido en una necesidad por la comodidad y ventajas que ofrece al usuario. Dicha facilidad también se aplica a los lenguajes usados para el desarrollo, siendo NodeJS uno de los más relevantes. Ahora bien, al crecer, también aumenta el riesgo de recibir ataques y alterar el funcionamiento normal, por lo que se debe tener en cuenta la seguridad, dado que una pequeña vulnerabilidad puede suponer un gran riesgo.
+                    br
+                    p Así pues, para resolver la problemática de comunicación entre alumnos y profesores de una universidad, se plantea el desarrollo de Unichat. Dicho servicio se encuentra realizado en NodeJS, que permite establecer diferentes canales de chat. Éstos se organizan según las materias que cursen, creando una sala sólo de alumnos y otra de alumnos y profesores. Además, tiene otras funcionalidades como personalizar el perfil, gestionar las diferentes salas existentes y, otras características que se verán en las siguientes secciones.
+
+    include ./footer.pug
+
+    include ./scriptsCss.pug

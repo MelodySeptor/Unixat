@@ -3,14 +3,7 @@ html
     include ./header.pug
 
     body
-        div(id="index-banner" class="parallax-container valign-wrapper")
-            div(class="section no-pad-bot")
-                div(class="container")
-                    h1(class="header center white-text text-white-2") Unichat
-                    div(class="row center")
-                        h5(class="header col s12 light") Frase molona
-            div(class="parallax")
-                img(src="images/Banner11.png" alt="Unsplashed background img 1")
+        include ./banner.pug
 
         h3(class="header center green-text") Identificarse
         br
@@ -20,15 +13,21 @@ html
             div(clas="section")
                 div(class="row")
                     form(class="col s12" method="post" action="/peticionLogin")
+                        if errorL
+                            div(class="row")
+                                div(class="input-field col s6")
+                                    i(class="material-icons prefix red-text") error_outline
+                                    label
+                                        p(class="red-text") Error al iniciar sesión.
                         div(class="row")
                             div(class="input-field col s6")
                                 i(class="material-icons prefix green-text") account_circle
-                                input(id="usernameAcceder" type="text" class="validate" required="required")
-                                label(for="usernameAcceder") Usuario
+                                input(id="usernameAcceder" name="usernameAcceder" type="text" class="validate" required="required")
+                                label(for="usernameAcceder") Usuario (Email)
 
                             div(class="input-field col s6")
                                 i(class="material-icons prefix green-text") lock
-                                input(id="passwordAcceder" type="password" class="validate" required="required")
+                                input(id="passwordAcceder" name="passwordAcceder" type="password" class="validate" required="required")
                                 label(for="passwordAcceder") Contraseña
 
                         div(class="row")

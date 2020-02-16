@@ -3,14 +3,7 @@ html
     include ./header.pug
 
     body
-        div(id="index-banner" class="parallax-container valign-wrapper")
-            div(class="section no-pad-bot")
-                div(class="container")
-                    h1(class="header center white-text text-white-2") Unichat
-                    div(class="row center")
-                        h5(class="header col s12 light") Frase molona
-            div(class="parallax")
-                img(src="images/Banner11.png" alt="Unsplashed background img 1")
+        include ./banner.pug
 
         h3(class="header center green-text") Registrarse
 
@@ -23,22 +16,38 @@ html
                                 i(class="material-icons prefix green-text") account_circle
                                 input(id="nombreRegistro" name="nombreRegistro" type="text" class="validate" required="required")
                                 label(for="nombreRegistro") Nombre
+                            if errorName
+                                div(class="input-field col s6")
+                                    i(class="material-icons prefix red-text") error_outline
+                                    label
+                                        p(class="red-text") Ingrese un nombre válido.
 
                         div(class="row")
                             div(class="input-field col s12")
                                 i(class="material-icons prefix green-text") email
                                 input(id="emailRegistro" name="emailRegistro" type="email" class="validate" required="required")
                                 label(for="emailRegistro") Email
+                            if errorEmail
+                                div(class="input-field col s6")
+                                    i(class="material-icons prefix red-text") error_outline
+                                    label
+                                        p(class="red-text") Dirección de correo electrónica inválida.
 
                         div(class="row")
                             div(class="input-field col s6")
                                 i(class="material-icons prefix green-text") lock
-                                input(id="passwordRegistro" type="password" class="validate" required="required")
+                                input(id="passwordRegistro" name ="passwordRegistro" type="password" class="validate" required="required")
                                 label(for="passwordRegistro") Contraseña
 
                             div(class="input-field col s6")
-                                input(id="passwordRepetirRegistro" type="password" class="validate" required="required")
+                                input(id="passwordRepetirRegistro" name ="passwordRepetirRegistro" type="password" class="validate" required="required")
                                 label(for="passwordRepetirRegistro") Repite la contraseña
+                            if errorPassword
+                                div(class="input-field col s6")
+                                        i(class="material-icons prefix red-text") error_outline
+                                        label
+                                            p(class="red-text") Contraseña inválida.
+                        
                         div(class="row")
                             div(class="input-field col s12")
                                 label
@@ -49,7 +58,7 @@ html
                             div(class="input-field col s6")
                                 i(class="material-icons prefix green-text") error_outline
                                 label
-                                    a(href="/acceder") Ya estoy registrado
+                                    a(href="/identificarse") Ya estoy registrado
                             div(class="input-field col s6")
                                 button(class="waves-effect waves-light btn green accent-4" type="submit" name="action") Registrar
                                     i(class="material-icons right") chevron_right

@@ -1,0 +1,55 @@
+html
+    include ./head.pug
+    include ./header.pug
+
+    body
+        include ./banner.pug
+
+        h3(class="header center green-text") Administración
+        br
+        br
+        div(class="container")
+            div(clas="section")
+                div(class="row")
+                if(rol==2)
+                    if(users.length==0)
+                        p Error no hay usuarios.
+                    else
+                        div(class="row")
+                            form(class="col s12" method="post" action="/eliminarUsuario")
+                                - var n=0
+                                - var m=0
+                                while n < users.length
+                                    while m < users[n].length
+                                        p= users[n][m].Nombre
+                                        p= users[n][m].Email
+                                        p= users[n][m].NombreC
+                                        div(class="row")
+                                            div(class="input-field col s6")
+                                                label
+                                                    input(class="with-gap green-text" name='group1' value= users[n][m].Email+"?"+users[n][m].NombreC type="radio")
+                                                    span Hola
+                                        - m=m+1
+                                    - m=0
+                                    - n=n+1
+                                div(class="row")
+                                    div(class="input-field col s6")
+                                            button(class="waves-effect waves-light btn green accent-4" type="submit" name="action" value="delete") Eliminar Usuario
+                                                i(class="material-icons right") chevron_right
+                if(rol==3)
+                    div(class="row")
+                        form(class="col s12" method="post" action="/gestionaAdmin")
+                            div(class="row")
+
+                                div(class="input-field center col s6")
+                                        h5(class="green-text") Gestiona Usuarios 
+                                        button(class="waves-effect waves-light btn green accent-4" type="submit" name="action" value="users") Ir
+                                            i(class="material-icons right") chevron_right        
+
+                            
+                                div(class="input-field center col s6")
+                                        h5(class="green-text") Gestiona las Salas
+                                        button(class="waves-effect waves-light btn green accent-4" type="submit" name="action" value="asign") Ir
+                                            i(class="material-icons right") chevron_right  
+    include ./footer.pug
+    include ./scriptsCss.pug
