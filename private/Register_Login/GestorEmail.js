@@ -4,7 +4,7 @@ var transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
       user: 'unichatInfor@gmail.com',
-      pass: 'nufnic82gma'
+      pass: ''
     }
   });
 
